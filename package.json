@@ -5,26 +5,22 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
-    "cron": "forever start src/cron.js",
     "build": "tsc -p ."
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eramdam/starry-raindrop.git"
+    "url": "git+https://github.com/overengineer/starry-raindrop.git"
   },
   "keywords": [],
   "author": "",
   "bugs": {
-    "url": "https://github.com/eramdam/starry-raindrop/issues"
+    "url": "https://github.com/overengineer/starry-raindrop/issues"
   },
-  "homepage": "https://github.com/eramdam/starry-raindrop#readme",
+  "homepage": "https://github.com/overengineer/starry-raindrop#readme",
   "dependencies": {
-    "@types/cron": "^2.0.0",
     "@types/lodash": "^4.14.182",
     "axios": "^0.27.2",
-    "cron": "^2.1.0",
     "dotenv": "^16.0.1",
-    "forever": "^4.0.3",
     "lodash": "^4.17.21",
     "octokit": "^2.0.5",
     "ts-node": "^10.9.1",
