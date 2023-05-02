@@ -1,6 +1,8 @@
 name: sync stars
 
-on: workflow_dispatch
+on:
+  schedule:
+    - cron: '0 0 * * *' # Daily Midnight
 
 jobs:
   build:
@@ -21,3 +23,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           RAINDROP_TOKEN: ${{ secrets.RAINDROP_TEST_TOKEN }}
           RAINDROP_COLLECTION_ID: ${{ secrets.RAINDROP_COLLECTION_ID }}
+
