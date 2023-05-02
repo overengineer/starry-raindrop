@@ -19,6 +19,9 @@ jobs:
 
       - name: debug
         run: ls
+
+      - name: prepare
+        run: bash prepare.sh
           
       - name: npm install
         run: npm install
