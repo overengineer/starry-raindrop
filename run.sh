@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
 
-rm .env
+rm -f .env
 touch .env
 
 echo "GITHUB_TOKEN=${GITHUB_TOKEN}" >> .env
 echo "RAINDROP_TOKEN=${RAINDROP_TOKEN}" >> .env
 echo "RAINDROP_COLLECTION_ID=${RAINDROP_COLLECTION_ID}" >> .env
+
+ls
 
 npm install
 npm start
