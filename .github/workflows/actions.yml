@@ -2,7 +2,7 @@ name: sync stars
 
 on:
   schedule:
-    - cron: '*/5 * * * *' # '0 0 * * *' # Daily Midnight
+    - cron: '0 0 * * *' # Daily Midnight
 
 jobs:
   build:
