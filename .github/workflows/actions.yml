@@ -2,7 +2,7 @@ name: sync stars
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Daily Midnight
+    - cron: '*/2 * * * *' # '0 0 * * *' # Daily Midnight
 
 jobs:
   build:
@@ -16,6 +16,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
+
+      - name: debug
+        run: ls
           
       - name: npm install
         run: npm install
