@@ -16,15 +16,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-
-      - name: debug
-        run: ls
-
-      - name: prepare
-        run: bash prepare.sh
           
-      - name: npm install
-        run: npm install
-          
-      - name: npm start
-        run: npm start
+      - name: run
+        run: ./run.sh
